@@ -1,6 +1,13 @@
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatNavList, MatButtonToggleModule, MatCard, MatCardModule} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import {MatButtonModule,
+    MatCheckboxModule,
+
+    MatExpansionModule, MatIconModule,
+      MatListModule, MatMenuModule,
+     MatSidenavModule,  MatToolbarModule } from '@angular/material';
 
 @NgModule ({
     declarations: [],
@@ -8,9 +15,13 @@ import {MatButtonModule, MatCheckboxModule, MatNavList, MatButtonToggleModule, M
         BrowserAnimationsModule,
         MatButtonModule,
         MatCheckboxModule,
-        MatNavList,
-        MatButtonToggleModule,
-        MatCardModule
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule,
+        MatSidenavModule,
+        FlexLayoutModule,
+        MatExpansionModule,
+        MatListModule,
     ],
     providers: [],
 
