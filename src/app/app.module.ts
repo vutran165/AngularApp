@@ -11,7 +11,8 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
