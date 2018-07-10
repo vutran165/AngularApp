@@ -4,7 +4,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {MatButtonModule,
     MatCheckboxModule,
-
     MatExpansionModule, MatIconModule,
       MatListModule, MatMenuModule,
      MatSidenavModule,  MatToolbarModule } from '@angular/material';
@@ -27,5 +26,4 @@ import {MatButtonModule,
 
 })
 
-// tslint:disable-next-line:eofline
 export class MaterialModule { }
