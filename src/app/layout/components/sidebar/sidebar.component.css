@@ -13,6 +13,7 @@
 .sidebar .sidebar-header {
     padding: 2%;
     background: #6d7fcc;
+	text-align: center;
 }
 
 .sidebar ul.components {
