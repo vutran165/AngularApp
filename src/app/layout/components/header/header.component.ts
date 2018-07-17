@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  // pushRightClass: string = 'push-right';
-
-  // toggleSidebar() {
-  //   const dom: any = document.querySelector('body');
-  //   return dom.classList.contains(this.pushRightClass);
-  // }
-
+  title = 'app';
+  faCoffee = faCoffee;
 
   constructor() { }
 

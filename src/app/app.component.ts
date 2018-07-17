@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -16,6 +17,8 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   }
 
+  title = 'app';
+  faCoffee = faCoffee;
 
 
 }
