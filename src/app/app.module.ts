@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { FontAwesomeModule } from '@fortawesome/fontawesome-free';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // add bootstrap 4
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -24,7 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LayoutModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    // FontAwesomeModule,
+    FontAwesomeModule,
     NgbModule.forRoot(),
   ],
   providers: [],
