@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  @Input() header: HeaderComponent; 
+
+  constructor() {
+    // console.log(this.header);
+   }
+
+
 
   ngOnInit() {
   }

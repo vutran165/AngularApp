@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -9,11 +10,29 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 export class HeaderComponent implements OnInit {
 
   title = 'app';
-  faCoffee = faCoffee;
+  faAlignLeft = faAlignLeft;
+  faUser = faUser;
 
-  constructor() { }
+  public show:boolean = false;
+  
+  // toggleSidebar(x:boolean){
+  //   x = !this.show;
+  //   return x;
+  // }
+  
+  
+  toggleSidebar(){
+    this.show = !this.show;
+    console.log(this.show);
+  }
+
+
+  constructor() { 
+    console.log(this.show);
+  }
 
   ngOnInit() {
+    
   }
 
 }

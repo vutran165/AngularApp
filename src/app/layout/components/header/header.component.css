@@ -1,9 +1,10 @@
-/* .navbar-header {
+.navbar-header {
     background: #7386D5;
     width: 100%;
-    height: 8%;
-    position: relative;
+    height: 10%;
+    
 }
+
 
 .navbar-header-left {
     width: 20%;
@@ -15,4 +16,4 @@
     width: 80%;
     float: right;
     height: 100%;
-} */
+}
