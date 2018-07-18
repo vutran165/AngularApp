@@ -1,7 +1,7 @@
 
 <app-header class="main-header"></app-header>
 <section class="main-container">	
-	<app-sidebar class="sidenavmenu" ></app-sidebar>
+	<app-sidebar class="sidenavmenu" [@navInOut]="menuState" ></app-sidebar>
 	<div class="main-content">
 		<router-outlet></router-outlet>
 	</div>

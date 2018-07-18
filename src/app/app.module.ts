@@ -1,31 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser';
+
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-
-import { MaterialModule } from './material.module';
 import { AppRoutingModule } from './app-routing.module';
-
 import { LayoutModule } from './layout/layout.module';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // add bootstrap 4
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
-    BrowserModule,
-    MaterialModule,
+    CommonModule,
     AppRoutingModule,
     LayoutModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    // FontAwesomeModule,
     NgbModule.forRoot(),
+    BrowserModule,
+    // BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

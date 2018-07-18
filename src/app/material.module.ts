@@ -11,7 +11,7 @@ import {MatButtonModule,
 @NgModule ({
     declarations: [],
     imports: [
-        BrowserAnimationsModule,
+        // BrowserAnimationsModule,
         MatButtonModule,
         MatCheckboxModule,
         MatToolbarModule,
