@@ -12,6 +12,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('in', style({
         transform: 'translate3d(0,0,0)'
     })),
+      state('out', style({
+        transform: 'translate3d(100%, 0, 0)'
+      })),
       transition('in => out', animate('400ms ease-in-out')),
       transition('out => in', animate('400ms ease-in-out'))
   ])
@@ -25,7 +28,7 @@ export class HeaderComponent implements OnInit {
   faUser = faUser;
 
   // public show:boolean = false;
-  menuState:string = 'out';
+  public menuState:string = 'out';
    
   toggleSidebar()
   {
@@ -35,7 +38,7 @@ export class HeaderComponent implements OnInit {
 
 
   constructor() { 
-    // console.log(this.show);
+    
   }
 
   ngOnInit() {

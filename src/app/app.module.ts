@@ -8,7 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,9 @@ import { BrowserModule } from '@angular/platform-browser';
     HttpClientModule,
     NgbModule.forRoot(),
     BrowserModule,
-    // BrowserAnimationsModule
+    BrowserAnimationsModule
   ],
+  // exports: [BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
