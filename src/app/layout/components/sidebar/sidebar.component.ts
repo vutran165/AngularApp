@@ -1,6 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
-
+import { LayoutCommonService } from 'src/app/layout/layout-common.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -12,13 +12,19 @@ export class SidebarComponent implements OnInit {
 
   @Input() header: HeaderComponent; 
 
-  constructor() {
-    // console.log(this.header);
+   //this new approach - using service
+   @HostBinding('class.is-open') @Input()
+   isOpen = false;
+  
+   constructor(private service: LayoutCommonService) {
+    
    }
 
-
-
   ngOnInit() {
+    this.service.change.subscribe(isOpen => {
+      this.isOpen = isOpen;
+    });
+
   }
 
 }

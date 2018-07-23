@@ -1,11 +1,9 @@
 
 <app-header class="main-header">
-	<button class="btn btn-light" type="button" (click)="toggleSidebar()">
-		<fa-icon [icon]="faAlignLeft"></fa-icon> 
-	</button>
+	
 </app-header>
 <section class="main-container">	
-	<app-sidebar class="sidenavmenu" [@navInOut]="menuState" ></app-sidebar>
+	<app-sidebar class="sidenavmenu" [isOpen]="sideBarIsOpened"></app-sidebar>
 	<div class="main-content">
 		<router-outlet></router-outlet>
 	</div>
